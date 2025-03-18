@@ -24,14 +24,14 @@
 ### Step 1: Copy Required Files
 Copy the following files to the specified directories:
 
-- `graphics.h` and `winbgim.h` → `C:\Program Files (x86)\CodeBlocks\MinGW\include`
-- `libbgi.a` → `C:\Program Files (x86)\CodeBlocks\MinGW\lib`
+- `graphics.h` and `winbgim.h` → `C:\MinGW\include`
+- `libbgi.a` → `C:\MinGW\lib`
 
 ### Step 2: Configure Compiler Settings
 1. Open Code::Blocks.
 2. Navigate to `Settings` -> `Compiler...` -> `Linker Settings`.
 3. **In the Left pane:** Click `Add`, then browse and add:
-   - `C:\Program Files (x86)\CodeBlocks\MinGW\lib\libbgi.a`
+   - `C:\MinGW\lib\libbgi.a`
 4. **In the Right pane:** Add the following in `Other linker options`:
    ```
    -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
